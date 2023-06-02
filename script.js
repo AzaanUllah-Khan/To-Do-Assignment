@@ -74,6 +74,7 @@ function changeTask(button) {
 function doneTask(lity) {
     if (lity.style.boxShadow == "none") {
         clonedLity = lity.cloneNode(true);
+        clonedLity.removeChild(clonedLity.lastChild);
         lity.style.boxShadow = "0 0 15px rgba(0, 0, 0, 0.09)";
         lity.style.textDecoration = "line-through";
         lity.style.backgroundColor = "rgb(253, 253, 253)";
