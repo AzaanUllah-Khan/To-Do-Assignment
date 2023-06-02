@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- fontfamily -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>To-Do Assignment | A simple App to manage your To-Do-s</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fa fa-check" onclick="showDoneTask()"></i>
+            <h1 id="h1">Azaan To-Do List</h1>
+        </div>
+        <div class="input" id="input">
+            <div class="user-input">
+                <i class="fa fa-add" onclick="addTask()"></i>
+                <input type="text" id="input-feild" placeholder="Enter Your Task Here">
+            </div>
+        </div>
+        <div class="main" id="main">
+            <ul id="ul"></ul>
+            <button class="add" id="add" onclick="showInput()"><i class="fa- fa-add" style="font-size: 20px;"></i>Add New Task</button>
+        </div>
+        <div class="main completed" id="done">
+            <ul id="CompUl"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
